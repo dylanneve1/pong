@@ -1,4 +1,4 @@
-float ballxPos = 225;
+//float ballxPos = 225;
 float ballyPos = 225;
 float ballxSpeed = 4;
 float ballySpeed = 1.5;
@@ -7,6 +7,8 @@ int menu = 1;
 
 int rectOnexPos = 30;
 int rectOneyPos = 250;
+
+//Rect two will be added in a later version. This will have multiplayer option.
 int rectTwoxPos = 450;
 int rectTwoyPos = 250;
 
