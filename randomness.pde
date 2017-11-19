@@ -1,31 +1,31 @@
 void randomness() {
   if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 50 && ballyPos <= rectOneyPos + 60 && ballxPos >= rectOnexPos) {
-    enemyChance = random(0, 30);
+    enemyChance = random(-15, 15);
     randomness = 3;
   }
   if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 40 && ballyPos <= rectOneyPos + 50 && ballxPos >= rectOnexPos) {
-    enemyChance = random(0, 30);
+    enemyChance = random(0, 60);
     randomness = 2;
   }
   if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 30 && ballyPos <= rectOneyPos + 40 && ballxPos >= rectOnexPos) {
-    enemyChance = random(0, 30);
+    enemyChance = random(0, 60);
     randomness = 1;
   }
   if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 25 && ballyPos <= rectOneyPos + 30 && ballxPos >= rectOnexPos) {
-    enemyChance = random(0, 30);
+    enemyChance = random(0, 60);
     randomness = 0;
   }
   if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 20 && ballyPos <= rectOneyPos + 30 && ballxPos >= rectOnexPos) {
-    enemyChance = random(0, 30);
+    enemyChance = random(0, 60);
     randomness = -1;
   }
   if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 10 && ballyPos <= rectOneyPos + 20 && ballxPos >= rectOnexPos) {
-    enemyChance = random(0, 30);
+    enemyChance = random(0, 60);
     randomness = -2;
   }
   if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 0 && ballyPos <= rectOneyPos + 10 && ballxPos >= rectOnexPos) {
     randomness = -3;
-    enemyChance = random(0, 30);
+    enemyChance = random(0, 60);
   }
   if (ballxPos >= rectTwoxPos - 20 && ballyPos >= rectTwoyPos + 50 && ballyPos <= rectTwoyPos + 60 && ballxPos <= rectTwoxPos) {
     randomness = 3;
