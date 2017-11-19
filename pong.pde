@@ -11,6 +11,7 @@ int rectOnexPos = 30;
 int rectOneyPos = 250;
 int rectTwoxPos = 450;
 int rectTwoyPos = 250;
+float enemyOneyPos;
 
 int score = 0;
 int highScore = 0;
@@ -20,6 +21,7 @@ void setup() {
 }
 
 void draw() {
+  enemyOneyPos = ballyPos - 30;
   menu();
   if(keyPressed == true) { 
     if(key == 'r') {
@@ -40,7 +42,7 @@ void draw() {
     bounce();
     display();
     rect(rectOnexPos, rectOneyPos, 20, 60);
-    rect(rectTwoxPos, rectTwoyPos, 20, 60);
+    rect(rectTwoxPos, enemyOneyPos, 20, 60);
     if(keyPressed == true) {
       if(key == 'w') {
         rectOneyPos = rectOneyPos - 4;
@@ -49,10 +51,10 @@ void draw() {
         rectOneyPos = rectOneyPos + 4;
       }
       if(key == 'i') {
-        rectTwoyPos = rectTwoyPos - 4;
+        enemyOneyPos = enemyOneyPos - 4;
       }
       if(key == 'k') {
-        rectTwoyPos = rectTwoyPos + 4;
+        enemyOneyPos = enemyOneyPos + 4;
       }
     }
   }
@@ -77,13 +79,17 @@ void move() {
 
 void bounce() {
   if (ballxPos >= 500) {
-    ballxSpeed = ballxSpeed*-1;
+    score = score + 1;
+    ballxPos = 70;
+    ballyPos = 250;
+    delay(3000);
   }
   if (ballxPos <= 0) {
     if(score >= highScore) {
       highScore = score;
     }
-    ballxPos = 450;
+    ballxPos = 430;
+    ballyPos = 250;
     delay(3000);
     score = 0;
   }
@@ -99,9 +105,11 @@ void gravity() {
 }
 
 void collision() {
-  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos && ballyPos <= rectOneyPos + 60 && ballxPos >= rectOnexPos) {
+  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos && ballyPos <= rectOneyPos + 60 && ballxPos >= rectOnexPos + 15) {
     ballxSpeed = ballxSpeed * -1;
-    score = score + 1;
+  }
+  if(ballxPos >= rectTwoxPos && ballyPos >= enemyOneyPos && ballyPos <= enemyOneyPos + 60 && ballxPos <= rectTwoxPos + 5) {
+    ballxSpeed = ballxSpeed * -1;
   }
 }
 
@@ -134,25 +142,25 @@ void randomness() {
     randomness = -3;
     enemyChance = random(0,30);
   }
-  if(ballxPos >= rectTwoxPos - 20 && ballyPos <= rectTwoyPos + 50 && ballyPos >= rectTwoyPos + 60 && ballxPos <= rectTwoxPos) {
-    randomness = 3;
-  }
-  if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 40 && ballyPos >= rectTwoyPos + 50 && ballxPos <= rectTwoxPos) {
-    randomness = 2;
-  }
-  if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 30 && ballyPos >= rectTwoyPos + 40 && ballxPos <= rectTwoxPos) {
-    randomness = 1;
-  }
-  if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 25 && ballyPos >= rectTwoyPos + 30 && ballxPos <= rectTwoxPos) {
-    randomness = 0;
-  }
-  if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 20 && ballyPos >= rectTwoyPos + 30 && ballxPos <= rectTwoxPos) {
-    randomness = -1;
-  }
-  if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 10 && ballyPos >= rectTwoyPos + 20 && ballxPos <= rectTwoxPos) {
-    randomness = -2;
-  }
-  if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 0 && ballyPos >= rectTwoyPos + 10 && ballxPos <= rectTwoxPos) {
-    randomness = -3;
-  }
+  //if(ballxPos >= rectTwoxPos - 20 && ballyPos <= rectTwoyPos + 50 && ballyPos >= rectTwoyPos + 60 && ballxPos <= rectTwoxPos) {
+    //randomness = 3;
+  //}
+  //if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 40 && ballyPos >= rectTwoyPos + 50 && ballxPos <= rectTwoxPos) {
+    //randomness = 2;
+  //}
+  //if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 30 && ballyPos >= rectTwoyPos + 40 && ballxPos <= rectTwoxPos) {
+    //randomness = 1;
+  //}
+  //if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 25 && ballyPos >= rectTwoyPos + 30 && ballxPos <= rectTwoxPos) {
+    //randomness = 0;
+  //}
+  //if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 20 && ballyPos >= rectTwoyPos + 30 && ballxPos <= rectTwoxPos) {
+    //randomness = -1;
+  //}
+  //if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 10 && ballyPos >= rectTwoyPos + 20 && ballxPos <= rectTwoxPos) {
+    //randomness = -2;
+  //}
+  //if(ballxPos >= rectTwoxPos && ballyPos <= rectTwoyPos + 0 && ballyPos >= rectTwoyPos + 10 && ballxPos <= rectTwoxPos) {
+    //randomness = -3;
+  //}
 }
