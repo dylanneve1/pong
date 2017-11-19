@@ -2,6 +2,7 @@ float ballxPos = 225;
 float ballyPos = 225;
 float ballxSpeed = 4;
 float ballySpeed = 1.5;
+float randomness = 0;
 
 int menu = 1;
 
@@ -33,6 +34,7 @@ void draw() {
     text(highScore, 344, 45);
     collision();
     gravity();
+    randomness();
     move();
     bounce();
     display();
@@ -69,7 +71,7 @@ void display() {
 
 void move() {
   ballxPos = ballxPos + ballxSpeed;
-  ballyPos = ballyPos + ballySpeed;
+  ballyPos = ballyPos + randomness;
 }
 
 void bounce() {
@@ -87,12 +89,11 @@ void bounce() {
 }
 
 void gravity() {
-
   if (ballyPos >= 500) {
-    ballySpeed = ballySpeed*-1;
+    randomness = randomness*-1;
   }
   if (ballyPos <= 1) {
-    ballySpeed = ballySpeed*-1;
+    randomness = randomness*-1;
   }
 }
 
@@ -100,5 +101,29 @@ void collision() {
   if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos && ballyPos <= rectOneyPos + 60 && ballxPos >= rectOnexPos) {
     ballxSpeed = ballxSpeed * -1;
     score = score + 1;
+  }
+}
+
+void randomness() {
+  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 50 && ballyPos <= rectOneyPos + 60 && ballxPos >= rectOnexPos) {
+    randomness = 3;
+  }
+  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 40 && ballyPos <= rectOneyPos + 50 && ballxPos >= rectOnexPos) {
+    randomness = 2;
+  }
+  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 30 && ballyPos <= rectOneyPos + 40 && ballxPos >= rectOnexPos) {
+    randomness = 1;
+  }
+  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 25 && ballyPos <= rectOneyPos + 30 && ballxPos >= rectOnexPos) {
+    randomness = 0;
+  }
+  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 20 && ballyPos <= rectOneyPos + 30 && ballxPos >= rectOnexPos) {
+    randomness = -1;
+  }
+  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 10 && ballyPos <= rectOneyPos + 20 && ballxPos >= rectOnexPos) {
+    randomness = -2;
+  }
+  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 0 && ballyPos <= rectOneyPos + 10 && ballxPos >= rectOnexPos) {
+    randomness = -3;
   }
 }
