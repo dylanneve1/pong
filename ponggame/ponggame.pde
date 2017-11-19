@@ -11,6 +11,7 @@ int rectTwoxPos = 450;
 int rectTwoyPos = 250;
 
 int score = 0;
+int highScore = 0;
 
 void setup() {
   size(500, 500);
@@ -26,7 +27,10 @@ void draw() {
   if(menu == 2) {
     background(0);
     textSize(20);
-    text(score, 250, 40);
+    text("Score", 230, 20);
+    text(score, 250, 45);
+    text("High score", 300, 20);
+    text(highScore, 344, 45);
     collision();
     gravity();
     move();
@@ -73,7 +77,10 @@ void bounce() {
     ballxSpeed = ballxSpeed*-1;
   }
   if (ballxPos <= 0) {
-    ballxPos = 250;
+    if(score >= highScore) {
+      highScore = score;
+    }
+    ballxPos = 450;
     delay(3000);
     score = 0;
   }
@@ -90,7 +97,7 @@ void gravity() {
 }
 
 void collision() {
-  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos && ballyPos <= rectOneyPos + 60) {
+  if(ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos && ballyPos <= rectOneyPos + 60 && ballxPos >= rectOnexPos) {
     ballxSpeed = ballxSpeed * -1;
     score = score + 1;
   }
