@@ -42,6 +42,7 @@ void draw() {
     text(highScore, 344, 45);
     text("Lifes", 15, 20);
     text(lifes, 30, 45);
+    offSet();
     collision();
     gravity();
     randomness();
@@ -65,6 +66,12 @@ void draw() {
         enemyOneyPos = enemyOneyPos + 4;
       }
     }
+  }
+}
+
+void offSet() {
+  if(enemyChance >= 10 && enemyChance <= 20) {
+    enemyOneyPos = enemyOneyPos + 70;
   }
 }
 
@@ -115,6 +122,7 @@ void bounce() {
     ballxPos = 70;
     ballyPos = 250;
     delay(3000);
+    enemyChance = 0;
   }
   if (ballxPos <= 0) {
     if (score >= highScore) {
