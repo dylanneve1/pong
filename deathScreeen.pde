@@ -1,6 +1,7 @@
 void deathScreen() {
   if (deathScreen == 2) {
     background(255, 0, 0);
+    score = 0;
     textSize(60);
     text("Game Over", 80, 250);
     textSize(20);

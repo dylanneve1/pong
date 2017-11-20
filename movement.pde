@@ -12,9 +12,6 @@ void bounce() {
     enemyChance = 0;
   }
   if (ballxPos <= 0) {
-    if (score >= highScore) {
-      highScore = score;
-    }
     ballxPos = 430;
     ballyPos = 250;
     delay(3000);
