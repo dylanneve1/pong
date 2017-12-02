@@ -38,7 +38,7 @@ void gameMain()
   text("Lifes", 15, 20);
   text(lifes, 30, 45);
   offSet();
-  paddle.collision();
+  paddle.main();
   randomness();
   ball.main();
   display();
