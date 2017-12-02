@@ -39,11 +39,8 @@ void gameMain()
   text(lifes, 30, 45);
   offSet();
   paddle.collision();
-  gravity();
   randomness();
-  move();
-  ball.life();
-  bounce();
+  ball.main();
   display();
   rect(rectOnexPos, rectOneyPos, 20, 60);
   rect(rectTwoxPos, enemyOneyPos, 20, 60);
