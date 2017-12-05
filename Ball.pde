@@ -1,6 +1,6 @@
 class Ball
 {
-  
+
   void life() 
   {
     if (lifes == -1) 
@@ -13,11 +13,16 @@ class Ball
       menu = 3;
     }
   }
-  
+
+  void show() 
+  {
+    ellipse(ballxPos, ballyPos, 20, 20);
+  }
+
   void move() 
   {
-  ballxPos = ballxPos + ballxSpeed;
-  ballyPos = ballyPos + randomness;
+    ballxPos = ballxPos + ballxSpeed;
+    ballyPos = ballyPos + randomness;
   }
 
   void bounce() 
@@ -49,5 +54,5 @@ class Ball
     {
       randomness = randomness*-1;
     }
-  }  
+  }
 }

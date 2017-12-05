@@ -40,12 +40,12 @@ void gameMain()
   paddle.show();
   paddle.offSet();
   paddle.collision();
-  randomness();
+  paddle.randomness();
   ball.life();
   ball.move();
   ball.bounce();
   ball.gravity();
-  display();
+  ball.show();
   rect(rectOnexPos, rectOneyPos, 20, 60);
   rect(rectTwoxPos, enemyOneyPos, 20, 60);
   if (keyPressed == true) {
