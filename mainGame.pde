@@ -37,10 +37,14 @@ void gameMain()
   text(highScore, 344, 45);
   text("Lifes", 15, 20);
   text(lifes, 30, 45);
-  offSet();
-  paddle.main();
+  paddle.show();
+  paddle.offSet();
+  paddle.collision();
   randomness();
-  ball.main();
+  ball.life();
+  ball.move();
+  ball.bounce();
+  ball.gravity();
   display();
   rect(rectOnexPos, rectOneyPos, 20, 60);
   rect(rectTwoxPos, enemyOneyPos, 20, 60);

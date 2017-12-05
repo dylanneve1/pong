@@ -3,12 +3,6 @@ class Paddle
   float y = displayHeight/2;
   float x = displayWidth/8;
 
-  void main() 
-  {
-    show();
-    collision();
-  }
-
   void show() 
   {
     rect(x, y, 10, 10);

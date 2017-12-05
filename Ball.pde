@@ -1,14 +1,6 @@
 class Ball
 {
   
-  void main()
-  {
-    bounce();
-    move();
-    gravity();
-    life();
-  }
-  
   void life() 
   {
     if (lifes == -1) 
