@@ -11,7 +11,7 @@ void setup()
 
 void draw() 
 {
-  enemyOneyPos = ballyPos - 30;
+  enemyOneyPos = ball.y - 30;
   menu();
   deathScreen();
   if (keyPressed == true) 
@@ -37,7 +37,6 @@ void gameMain()
   text(highScore, 344, 45);
   text("Lifes", 15, 20);
   text(lifes, 30, 45);
-  paddle.show();
   paddle.offSet();
   paddle.collision();
   paddle.randomness();

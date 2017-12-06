@@ -1,11 +1,6 @@
 class Paddle
 {
 
-  void show() 
-  {
-    rect(x, y, 10, 10);
-  }
-
   void collision() 
   {
     if (ball.x <= rectOnexPos + 20 && ball.y >= rectOneyPos && ball.y <= rectOneyPos + 60 && ball.x >= rectOnexPos + 15) 
