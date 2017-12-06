@@ -1,6 +1,11 @@
 class Ball
 {
 
+  float x = 225;
+  float y = 225;
+  float xSpeed = 4;
+  float ySpeed = 1.5;
+
   void life() 
   {
     if (lifes == -1) 
@@ -16,29 +21,29 @@ class Ball
 
   void show() 
   {
-    ellipse(ballxPos, ballyPos, 20, 20);
+    ellipse(x, y, 20, 20);
   }
 
   void move() 
   {
-    ballxPos = ballxPos + ballxSpeed;
-    ballyPos = ballyPos + randomness;
+    x = x + xSpeed;
+    y = y + randomness;
   }
 
   void bounce() 
   {
-    if (ballxPos >= 500) 
+    if (x >= 500) 
     {
       score = score + 1;
-      ballxPos = 70;
-      ballyPos = 250;
+      x = 70;
+      y = 250;
       delay(3000);
       enemyChance = 0;
     }
-    if (ballxPos <= 0) 
+    if (x <= 0) 
     {
-      ballxPos = 430;
-      ballyPos = 250;
+      x = 430;
+      y = 250;
       delay(3000);
       lifes = lifes - 1;
     }
@@ -46,11 +51,11 @@ class Ball
 
   void gravity() 
   {
-    if (ballyPos >= 500) 
+    if (y >= 500) 
     {
       randomness = randomness*-1;
     }
-    if (ballyPos <= 1) 
+    if (y <= 1) 
     {
       randomness = randomness*-1;
     }

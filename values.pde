@@ -1,7 +1,4 @@
-float ballxPos = 225;
-float ballyPos = 225;
-float ballxSpeed = 4;
-float ballySpeed = 1.5;
+
 float randomness = 0;
 
 int menu = 1;

@@ -1,7 +1,5 @@
 class Paddle
 {
-  float y = displayHeight/2;
-  float x = displayWidth/8;
 
   void show() 
   {
@@ -10,78 +8,78 @@ class Paddle
 
   void collision() 
   {
-    if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos && ballyPos <= rectOneyPos + 60 && ballxPos >= rectOnexPos + 15) 
+    if (ball.x <= rectOnexPos + 20 && ball.y >= rectOneyPos && ball.y <= rectOneyPos + 60 && ball.x >= rectOnexPos + 15) 
     {
-      ballxSpeed = ballxSpeed * -1;
+      ball.xSpeed = ball.xSpeed * -1;
     }
-    if (ballxPos >= rectTwoxPos && ballyPos >= enemyOneyPos && ballyPos <= enemyOneyPos + 60 && ballxPos <= rectTwoxPos + 5) 
+    if (ball.x >= rectTwoxPos && ball.y >= enemyOneyPos && ball.y <= enemyOneyPos + 60 && ball.x <= rectTwoxPos + 5) 
     {
-      ballxSpeed = ballxSpeed * -1;
+      ball.xSpeed = ball.xSpeed * -1;
     }
   }
 
   void randomness() 
   {
-    if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 50 && ballyPos <= rectOneyPos + 60 && ballxPos >= rectOnexPos) 
+    if (ball.x <= rectOnexPos + 20 && ball.y >= rectOneyPos + 50 && ball.y <= rectOneyPos + 60 && ball.x >= rectOnexPos) 
     {
       enemyChance = random(-15, 15);
       randomness = 3;
     }
-    if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 40 && ballyPos <= rectOneyPos + 50 && ballxPos >= rectOnexPos) 
+    if (ball.x <= rectOnexPos + 20 && ball.y >= rectOneyPos + 40 && ball.y <= rectOneyPos + 50 && ball.x >= rectOnexPos) 
     {
       enemyChance = random(0, 60);
       randomness = 2;
     }
-    if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 30 && ballyPos <= rectOneyPos + 40 && ballxPos >= rectOnexPos) 
+    if (ball.x <= rectOnexPos + 20 && ball.y >= rectOneyPos + 30 && ball.y <= rectOneyPos + 40 && ball.x >= rectOnexPos) 
     {
       enemyChance = random(0, 60);
       randomness = 1;
     }
-    if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 25 && ballyPos <= rectOneyPos + 30 && ballxPos >= rectOnexPos) 
+    if (ball.x <= rectOnexPos + 20 && ball.y >= rectOneyPos + 25 && ball.y <= rectOneyPos + 30 && ball.x >= rectOnexPos) 
     {
       enemyChance = random(0, 60);
       randomness = 0;
     }
-    if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 20 && ballyPos <= rectOneyPos + 30 && ballxPos >= rectOnexPos) 
+    if (ball.x <= rectOnexPos + 20 && ball.y >= rectOneyPos + 20 && ball.y <= rectOneyPos + 30 && ball.x >= rectOnexPos) 
     {
       enemyChance = random(0, 60);
       randomness = -1;
     }
-    if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 10 && ballyPos <= rectOneyPos + 20 && ballxPos >= rectOnexPos) 
+    if (ball.x <= rectOnexPos + 20 && ball.y >= rectOneyPos + 10 && ball.y <= rectOneyPos + 20 && ball.x >= rectOnexPos) 
     {
       enemyChance = random(0, 60);
       randomness = -2;
     }
-    if (ballxPos <= rectOnexPos + 20 && ballyPos >= rectOneyPos + 0 && ballyPos <= rectOneyPos + 10 && ballxPos >= rectOnexPos) 
+    if (ball.x <= rectOnexPos + 20 && ball.y >= rectOneyPos + 0 && ball.y <= rectOneyPos + 10 && ball.x >= rectOnexPos) 
     {
       randomness = -3;
       enemyChance = random(0, 60);
     }
-    if (ballxPos >= rectTwoxPos - 20 && ballyPos >= rectTwoyPos + 50 && ballyPos <= rectTwoyPos + 60 && ballxPos <= rectTwoxPos) 
+    if (ball.x >= rectTwoxPos - 20 && ball.y >= rectTwoyPos + 50 && ball.y <= rectTwoyPos + 60 && ball.x <= rectTwoxPos) 
     {
       randomness = 3;
     }
-    if (ballxPos >= rectTwoxPos && ballyPos >= rectTwoyPos + 40 && ballyPos <= rectTwoyPos + 50 && ballxPos <= rectTwoxPos) 
+    if (ball.x >= rectTwoxPos && ball.y >= rectTwoyPos + 40 && ball.y <= rectTwoyPos + 50 && ball.x <= rectTwoxPos) 
     {
       randomness = 2;
     }
-    if (ballxPos >= rectTwoxPos && ballyPos >= rectTwoyPos + 30 && ballyPos <= rectTwoyPos + 40 && ballxPos <= rectTwoxPos) 
+    if (ball.x >= rectTwoxPos && ball.y >= rectTwoyPos + 30 && ball.y <= rectTwoyPos + 40 && ball.x <= rectTwoxPos) 
     {
       randomness = 1;
     }
-    if (ballxPos >= rectTwoxPos && ballyPos >= rectTwoyPos + 25 && ballyPos <= rectTwoyPos + 30 && ballxPos <= rectTwoxPos) 
+    if (ball.x >= rectTwoxPos && ball.y >= rectTwoyPos + 25 && ball.y <= rectTwoyPos + 30 && ball.x <= rectTwoxPos) 
     {
       randomness = 0;
     }
-    if (ballxPos >= rectTwoxPos && ballyPos >= rectTwoyPos + 20 && ballyPos <= rectTwoyPos + 30 && ballxPos <= rectTwoxPos) 
+    if (ball.x >= rectTwoxPos && ball.y >= rectTwoyPos + 20 && ball.y <= rectTwoyPos + 30 && ball.x <= rectTwoxPos) 
     {
       randomness = -1;
     }
-    if (ballxPos >= rectTwoxPos && ballyPos >= rectTwoyPos + 10 && ballyPos <= rectTwoyPos + 20 && ballxPos <= rectTwoxPos) 
+    if (ball.x >= rectTwoxPos && ball.y >= rectTwoyPos + 10 && ball.y <= rectTwoyPos + 20 && ball.x <= rectTwoxPos) 
     {
       randomness = -2;
     }
-    if (ballxPos >= rectTwoxPos && ballyPos >= rectTwoyPos + 0 && ballyPos <= rectTwoyPos + 10 && ballxPos <= rectTwoxPos) 
+    if (ball.x >= rectTwoxPos && ball.y >= rectTwoyPos + 0 && ball.y <= rectTwoyPos + 10 && ball.x <= rectTwoxPos) 
     {
       randomness = -3;
     }
