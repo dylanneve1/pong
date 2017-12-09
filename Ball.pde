@@ -1,6 +1,8 @@
 class Ball
 {
 
+  int lifes;
+  float enemyChance;
   float x = 225;
   float y = 225;
   float xSpeed = 4;
@@ -14,8 +16,8 @@ class Ball
       {
         highScore = score;
       }
-      deathScreen = 2;
-      menu = 3;
+      screens.deathScreens = 2;
+      screens.menu = 3;
     }
   }
 
@@ -27,7 +29,7 @@ class Ball
   void move() 
   {
     x = x + xSpeed;
-    y = y + randomness;
+    y = y + paddle.randomness;
   }
 
   void bounce() 
@@ -53,11 +55,11 @@ class Ball
   {
     if (y >= 500) 
     {
-      randomness = randomness*-1;
+      paddle.randomness = paddle.randomness*-1;
     }
     if (y <= 1) 
     {
-      randomness = randomness*-1;
+      paddle.randomness = paddle.randomness*-1;
     }
   }
 }
