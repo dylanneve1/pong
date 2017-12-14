@@ -1,3 +1,5 @@
+# Copyright (C) 2017 Dylan Neve <dylanneve1@gmail.com>
+
 Paddle paddle;
 Ball ball;
 gameScreens screens;
