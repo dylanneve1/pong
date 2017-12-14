@@ -1,4 +1,4 @@
-# Copyright (C) 2017 Dylan Neve <dylanneve1@gmail.com>
+// Copyright (C) 2017 Dylan Neve <dylanneve1@gmail.com>
 
 class Paddle
 {
