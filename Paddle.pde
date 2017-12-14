@@ -1,3 +1,5 @@
+# Copyright (C) 2017 Dylan Neve <dylanneve1@gmail.com>
+
 class Paddle
 {
   int playerOnexPos = 30;
