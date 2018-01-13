@@ -5,7 +5,7 @@ Ball ball;
 gameScreens screens;
 
 int score = 0;
-
+int highScore = 0;
 //int highScore = int(loadStrings("testsaveloadstring.txt"));
 
 void setup() 

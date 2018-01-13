@@ -28,10 +28,20 @@ class gameScreens
   {
     if (menu == 1) 
     {
+      textAlign(CENTER);
       ball.lifes = 5;
       background(0);
       textSize(40);
-      text("Press R to begin", 90, 250);
+      fill(255);
+      text("Press R to begin", 250, 250);
+      fill(255);
+      rectMode(CENTER);
+      rect(250, 110, 200, 120);
+      fill(0);
+      text("Pong", 250, 100);
+      textSize(20);
+      text("by dylanneve1", 250, 150);
+      
     }
   }
 
