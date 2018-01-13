@@ -17,6 +17,12 @@ class Ball
       if (score >= highScore) 
       {
         highScore = score;
+        
+        String HighScore = str(highScore); 
+        
+        String savedHighScore[] = {HighScore}; 
+        
+        saveStrings("highscore.txt",savedHighScore);
       }
       screens.deathScreens = 2;
       screens.menu = 3;
