@@ -19,7 +19,7 @@ void setup()
 
 void draw() 
 {
-  paddle.enemyOneyPos = ball.y - 30;
+  paddle.enemyOneyPos = ball.y;
   screens.menu();
   screens.deathScreen();
   if (keyPressed == true) 

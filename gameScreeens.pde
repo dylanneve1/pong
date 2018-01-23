@@ -53,11 +53,11 @@ class gameScreens
       background(0);
       fill(255);
       textSize(20);
-      text("Score", 230, 20);
+      text("Score", 250, 20);
       text(score, 250, 45);
-      text("High score", 300, 20);
+      text("High score", 344, 20);
       text(highScore, 344, 45);
-      text("Lifes", 15, 20);
+      text("Lifes", 30, 20);
       text(ball.lifes, 30, 45);
       paddle.offSet();
       paddle.collision();
@@ -67,6 +67,7 @@ class gameScreens
       ball.bounce();
       ball.gravity();
       ball.show();
+      rectMode(CENTER);
       rect(paddle.playerOnexPos, paddle.playerOneyPos, 20, 60);
       rect(paddle.rectTwoxPos, paddle.enemyOneyPos, 20, 60);
       if (keyPressed == true) {
