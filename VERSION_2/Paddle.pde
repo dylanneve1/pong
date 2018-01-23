@@ -8,6 +8,7 @@ class Paddle
   {
     show();
     move();
+    collision();
   }
 
   void show()
@@ -42,5 +43,17 @@ class Paddle
         y = y + 6;
       }
     }
+  }
+  
+  void collision()
+  {
+    if(ball.leftEdge <= x + 10)
+    {
+      ball.xSpeed *= -1;
+    }
+    
+    
+    
+    
   }
 }

@@ -7,6 +7,7 @@ class Enemy
   void caller()
   {
     show();
+    collision();
   }
   
   void show()
@@ -18,5 +19,11 @@ class Enemy
 
     fill(#CFD8DC);
     rect(x, y, 20, 60);
+  }
+  
+  void collision()
+  {
+    
+    
   }
 }
