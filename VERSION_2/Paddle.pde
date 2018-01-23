@@ -21,6 +21,16 @@ class Paddle
 
   void move()
   {
+    if (y < 0)
+    {
+      y = y + 6;
+    }
+
+    if ( y > 500)
+    {
+      y = y - 6;
+    }
+
     if (keyPressed == true)
     {
       if (key == 'w')

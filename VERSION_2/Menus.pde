@@ -5,6 +5,7 @@ class Menus
   
   void caller()
   {
+    menu();
     play();
   }
   
@@ -15,6 +16,14 @@ class Menus
       background(#263238);
       paddle.caller();
       enemy.caller();
+      ball.caller();
     }
   }
+  
+  void menu()
+  {
+    
+    
+  }
+  
 }
