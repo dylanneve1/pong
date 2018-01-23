@@ -31,6 +31,7 @@ class Ball
 
   void show() 
   {
+    fill(255);
     ellipse(x, y, 20, 20);
   }
 

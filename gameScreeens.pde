@@ -4,6 +4,8 @@ class gameScreens
 {
   int deathScreens = 1;
   int menu = 1;
+  boolean gameMainSing = false;
+  
   void deathScreen() 
   {
     if (deathScreens == 2) 
@@ -41,42 +43,45 @@ class gameScreens
       text("Pong", 250, 100);
       textSize(20);
       text("by dylanneve1", 250, 150);
-      
     }
   }
 
   void gameMainSing() 
   {
-    background(0);
-    textSize(20);
-    text("Score", 230, 20);
-    text(score, 250, 45);
-    text("High score", 300, 20);
-    text(highScore, 344, 45);
-    text("Lifes", 15, 20);
-    text(ball.lifes, 30, 45);
-    paddle.offSet();
-    paddle.collision();
-    paddle.randomness();
-    ball.life();
-    ball.move();
-    ball.bounce();
-    ball.gravity();
-    ball.show();
-    rect(paddle.playerOnexPos, paddle.playerOneyPos, 20, 60);
-    rect(paddle.rectTwoxPos, paddle.enemyOneyPos, 20, 60);
-    if (keyPressed == true) {
-      if (key == 'w') 
-      {
-        paddle.playerOneyPos = paddle.playerOneyPos - 4;
-      }
-      if (key == 's') 
-      {
-        paddle.playerOneyPos = paddle.playerOneyPos + 4;
+    if (gameMainSing == true)
+    {
+      background(0);
+      fill(255);
+      textSize(20);
+      text("Score", 230, 20);
+      text(score, 250, 45);
+      text("High score", 300, 20);
+      text(highScore, 344, 45);
+      text("Lifes", 15, 20);
+      text(ball.lifes, 30, 45);
+      paddle.offSet();
+      paddle.collision();
+      paddle.randomness();
+      ball.life();
+      ball.move();
+      ball.bounce();
+      ball.gravity();
+      ball.show();
+      rect(paddle.playerOnexPos, paddle.playerOneyPos, 20, 60);
+      rect(paddle.rectTwoxPos, paddle.enemyOneyPos, 20, 60);
+      if (keyPressed == true) {
+        if (key == 'w') 
+        {
+          paddle.playerOneyPos = paddle.playerOneyPos - 4;
+        }
+        if (key == 's') 
+        {
+          paddle.playerOneyPos = paddle.playerOneyPos + 4;
+        }
       }
     }
   }
-  
+
   void gameMainMulti() 
   {
     background(0);
@@ -110,5 +115,4 @@ class gameScreens
       }
     }
   }
-  
 }

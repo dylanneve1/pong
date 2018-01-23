@@ -26,11 +26,8 @@ void draw()
   { 
     if (key == 'r') 
     {
-      screens.menu = 2;
+      screens.gameMainSing = true;
     }
   }
-  if (screens.menu == 2) 
-  {
-    screens.gameMainSing();
-  }
+  screens.gameMainSing();
 }
