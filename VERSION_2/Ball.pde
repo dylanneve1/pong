@@ -6,8 +6,11 @@ class Ball
   
   int leftEdge;
   int rightEdge;
+  int topEdge;
+  int bottomEdge;
   
   int xSpeed = 3;
+  int ySpeed = 1;
   
   void caller()
   {
@@ -26,12 +29,15 @@ class Ball
   void move()
   {
     x = x + xSpeed;
+    y = y + ySpeed;
   }
   
   void edgeDetect()
   {
     rightEdge = x + 10;
     leftEdge = x - 10;
+    topEdge = y - 10;
+    bottomEdge = y + 10;
   }
   
   void collision()
@@ -43,6 +49,15 @@ class Ball
     if(rightEdge >= 500)
     {
       xSpeed *= -1;
+    }
+    
+    if(topEdge <= 0)
+    {
+      ySpeed *= -1;
+    }
+    if(bottomEdge >= 500)
+    {
+      ySpeed *= -1;
     }
   }
   

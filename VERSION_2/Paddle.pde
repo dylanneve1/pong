@@ -4,10 +4,16 @@ class Paddle
   int x = 30;
   int y = 250;
 
+  int leftEdge;
+  int rightEdge;
+  int topEdge;
+  int bottomEdge;
+
   void caller()
   {
     show();
     move();
+    edgeDetect();
     collision();
   }
 
@@ -45,15 +51,19 @@ class Paddle
     }
   }
   
+  void edgeDetect()
+  {
+    leftEdge = x - 10;
+    rightEdge = x + 10;
+    topEdge = y - 30;
+    bottomEdge = y + 30;
+  }
+  
   void collision()
   {
-    if(ball.leftEdge <= x + 10)
+    if(ball.leftEdge <= rightEdge && ball.y <= bottomEdge && ball.y >= topEdge)
     {
       ball.xSpeed *= -1;
     }
-    
-    
-    
-    
   }
 }
