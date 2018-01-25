@@ -26,7 +26,10 @@ class Menus
   
   void dead()
   {
-    
+    if(dead == true)
+    {
+      background(#BF360C);
+    }
   }
   
   void menu()

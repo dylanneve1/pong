@@ -2,20 +2,23 @@
 
 class Ball
 {
-  
+
   float x = 250;
   float y = 250;
-  
+
   float leftEdge;
   float rightEdge;
   float topEdge;
   float bottomEdge;
-  
+
   float xSpeed = 3;
   float ySpeed;
-  
+
   float r = 10;
-  
+
+  int playerLives = 5;
+  int enemyLives = 5;
+
   void caller()
   {
     show();
@@ -24,20 +27,21 @@ class Ball
     sidesCollision();
     leftPaddleCollision();
     rightPaddleCollision();
+    lifeDetect();
   }
-  
+
   void show()
   {
     fill(#ECEFF1);
     ellipse(x, y, r*2, r*2);
   }
-  
+
   void move()
   {
     x = x + xSpeed;
     y = y + ySpeed;
   }
-  
+
   void edgeDetect()
   {
     rightEdge = x + 10;
@@ -45,30 +49,30 @@ class Ball
     topEdge = y - 10;
     bottomEdge = y + 10;
   }
-  
+
   void sidesCollision()
   {
-    if(leftEdge <= 0)
+    if (leftEdge <= 0)
     {
       xSpeed *= -1;
     }
-    if(rightEdge >= 500)
+    if (rightEdge >= 500)
     {
       xSpeed *= -1;
     }
-    if(topEdge <= 0)
+    if (topEdge <= 0)
     {
       ySpeed *= -1;
     }
-    if(bottomEdge >= 500)
+    if (bottomEdge >= 500)
     {
       ySpeed *= -1;
     }
   }
-  
+
   void leftPaddleCollision()
   {
-    if(leftEdge <= paddle.rightEdge && y <= paddle.bottomEdge && y >= paddle.topEdge)
+    if (leftEdge <= paddle.rightEdge && y <= paddle.bottomEdge && y >= paddle.topEdge)
     {
       float diff = y - (paddle.y - paddle.h/2);
       float rad = radians(45);
@@ -78,16 +82,35 @@ class Ball
       x = paddle.x + paddle.w/2 + r;
     }
   }
-  
+
   void rightPaddleCollision()
   {
-    if(rightEdge >= enemy.leftEdge && y <= enemy.bottomEdge && y >= enemy.topEdge)
+    if (rightEdge >= enemy.leftEdge && y <= enemy.bottomEdge && y >= enemy.topEdge)
     {
       float diff = y - (enemy.y - enemy.h/2);
       float angle = map(diff, 0, enemy.h, radians(225), radians(135));
       xSpeed = 5 * cos(angle);
       ySpeed = 5 * sin(angle);
       x = enemy.x - enemy.w/2 - r;
+    }
+  }
+
+  void lifeDetect()
+  {
+    if (y <= 0)
+    {
+      playerLives = playerLives - 1;
+    }
+    if (y >= 500)
+    {
+      enemyLives = enemyLives - 1;
+    }
+    
+    if(playerLives == - 1)
+    {
+      menus.playing = false;
+      menus.menu = false;
+      menus.dead = true;
     }
   }
 }
