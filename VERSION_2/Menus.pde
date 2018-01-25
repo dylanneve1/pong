@@ -3,7 +3,8 @@
 class Menus
 {
   
-  boolean playing = true;
+  boolean playing = false;
+  boolean menu = true;
   
   void caller()
   {
@@ -24,8 +25,23 @@ class Menus
   
   void menu()
   {
-    
-    
+    if(menu == true)
+    {
+      
+      background(#263238);
+      fill(255);
+      textSize(40);
+      textAlign(CENTER);
+      text("Press r to begin", 250, 250);
+      
+      if(keyPressed == true)
+      {
+        if(key == 'r')
+        {
+          playing = true;
+          menu = false;
+        }
+      }
+    }
   }
-  
 }
