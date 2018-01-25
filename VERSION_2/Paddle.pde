@@ -3,13 +3,16 @@
 class Paddle
 {
 
-  int x = 30;
-  int y = 250;
+  float x = 30;
+  float y = 250;
 
-  int leftEdge;
-  int rightEdge;
-  int topEdge;
-  int bottomEdge;
+  float w = 20;
+  float h = 60;
+
+  float leftEdge;
+  float rightEdge;
+  float topEdge;
+  float bottomEdge;
 
   void caller()
   {
@@ -25,7 +28,7 @@ class Paddle
     rectMode(CENTER);
 
     fill(#CFD8DC);
-    rect(x, y, 20, 60);
+    rect(x, y, w, h);
   }
 
   void move()

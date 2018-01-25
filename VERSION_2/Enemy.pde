@@ -3,13 +3,16 @@
 class Enemy
 {
   
-  int x = 470;
-  int y;
+  float x = 470;
+  float y;
   
-  int leftEdge;
-  int rightEdge;
-  int topEdge;
-  int bottomEdge;
+  float leftEdge;
+  float rightEdge;
+  float topEdge;
+  float bottomEdge;
+  
+  float w = 20;
+  float h = 60;
   
   void caller()
   {
@@ -26,7 +29,7 @@ class Enemy
     rectMode(CENTER);
 
     fill(#CFD8DC);
-    rect(x, y, 20, 60);
+    rect(x, y, w, h);
   }
   
   void edgeDetect()

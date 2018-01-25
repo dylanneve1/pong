@@ -3,16 +3,18 @@
 class Ball
 {
   
-  int x = 250;
-  int y = 250;
+  float x = 250;
+  float y = 250;
   
-  int leftEdge;
-  int rightEdge;
-  int topEdge;
-  int bottomEdge;
+  float leftEdge;
+  float rightEdge;
+  float topEdge;
+  float bottomEdge;
   
-  int xSpeed = 3;
-  int ySpeed = 1;
+  float xSpeed = 3;
+  float ySpeed;
+  
+  float r = 10;
   
   void caller()
   {
@@ -27,7 +29,7 @@ class Ball
   void show()
   {
     fill(#ECEFF1);
-    ellipse(x, y, 20, 20);
+    ellipse(x, y, r*2, r*2);
   }
   
   void move()
@@ -69,7 +71,13 @@ class Ball
   {
     if(leftEdge <= paddle.rightEdge && y <= paddle.bottomEdge && y >= paddle.topEdge)
     {
-      xSpeed *= -1;
+      //xSpeed *= -1;
+      float diff = y - (paddle.y - paddle.h/2);
+      float rad = radians(45);
+      float angle = map(diff, 0, paddle.h, -rad, rad);
+      xSpeed = 5 * cos(angle);
+      ySpeed = 5 * sin(angle);
+      x = paddle.x + paddle.w/2 + r;
     }
   }
   
@@ -77,7 +85,12 @@ class Ball
   {
     if(rightEdge >= enemy.leftEdge && y <= enemy.bottomEdge && y >= enemy.topEdge)
     {
-      xSpeed *= -1;
+      //xSpeed *= -1;
+      float diff = y - (enemy.y - enemy.h/2);
+      float angle = map(diff, 0, enemy.h, radians(225), radians(135));
+      xSpeed = 5 * cos(angle);
+      ySpeed = 5 * sin(angle);
+      x = enemy.x - enemy.w/2 - r;
     }
   }
   
