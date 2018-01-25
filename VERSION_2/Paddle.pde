@@ -16,7 +16,7 @@ class Paddle
     show();
     move();
     edgeDetect();
-    collision();
+    //collision();
   }
 
   void show()
@@ -59,13 +59,5 @@ class Paddle
     rightEdge = x + 10;
     topEdge = y - 30;
     bottomEdge = y + 30;
-  }
-  
-  void collision()
-  {
-    if(ball.leftEdge <= rightEdge && ball.y <= bottomEdge && ball.y >= topEdge)
-    {
-      ball.xSpeed *= -1;
-    }
   }
 }

@@ -15,7 +15,7 @@ class Enemy
   {
     show();
     edgeDetect();
-    collision();
+    //collision();
   }
   
   void show()
@@ -35,14 +35,5 @@ class Enemy
     rightEdge = x + 10;
     topEdge = y - 30;
     bottomEdge = y + 30;
-  }
-  
-  void collision()
-  {
-    if(ball.rightEdge >= leftEdge && ball.y <= bottomEdge && ball.y >= topEdge)
-    {
-      ball.xSpeed *= -1;
-    }
-    
   }
 }

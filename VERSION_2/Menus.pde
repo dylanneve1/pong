@@ -5,6 +5,7 @@ class Menus
   
   boolean playing = false;
   boolean menu = true;
+  boolean dead = false;
   
   void caller()
   {
@@ -21,6 +22,11 @@ class Menus
       enemy.caller();
       ball.caller();
     }
+  }
+  
+  void dead()
+  {
+    
   }
   
   void menu()

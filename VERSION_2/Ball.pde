@@ -19,7 +19,9 @@ class Ball
     show();
     move();
     edgeDetect();
-    collision();
+    sidesCollision();
+    leftPaddleCollision();
+    rightPaddleCollision();
   }
   
   void show()
@@ -42,7 +44,7 @@ class Ball
     bottomEdge = y + 10;
   }
   
-  void collision()
+  void sidesCollision()
   {
     if(leftEdge <= 0)
     {
@@ -63,6 +65,20 @@ class Ball
     }
   }
   
+  void leftPaddleCollision()
+  {
+    if(leftEdge <= paddle.rightEdge && y <= paddle.bottomEdge && y >= paddle.topEdge)
+    {
+      xSpeed *= -1;
+    }
+  }
   
+  void rightPaddleCollision()
+  {
+    if(rightEdge >= enemy.leftEdge && y <= enemy.bottomEdge && y >= enemy.topEdge)
+    {
+      xSpeed *= -1;
+    }
+  }
   
 }
