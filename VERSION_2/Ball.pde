@@ -56,7 +56,6 @@ class Ball
     {
       xSpeed *= -1;
     }
-    
     if(topEdge <= 0)
     {
       ySpeed *= -1;
@@ -71,7 +70,6 @@ class Ball
   {
     if(leftEdge <= paddle.rightEdge && y <= paddle.bottomEdge && y >= paddle.topEdge)
     {
-      //xSpeed *= -1;
       float diff = y - (paddle.y - paddle.h/2);
       float rad = radians(45);
       float angle = map(diff, 0, paddle.h, -rad, rad);
@@ -85,7 +83,6 @@ class Ball
   {
     if(rightEdge >= enemy.leftEdge && y <= enemy.bottomEdge && y >= enemy.topEdge)
     {
-      //xSpeed *= -1;
       float diff = y - (enemy.y - enemy.h/2);
       float angle = map(diff, 0, enemy.h, radians(225), radians(135));
       xSpeed = 5 * cos(angle);
@@ -93,5 +90,4 @@ class Ball
       x = enemy.x - enemy.w/2 - r;
     }
   }
-  
 }

@@ -19,7 +19,6 @@ class Paddle
     show();
     move();
     edgeDetect();
-    //collision();
   }
 
   void show()

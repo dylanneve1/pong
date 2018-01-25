@@ -18,7 +18,6 @@ class Enemy
   {
     show();
     edgeDetect();
-    //collision();
   }
   
   void show()
