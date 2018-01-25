@@ -54,7 +54,7 @@ class Paddle
       }
     }
   }
-  
+
   void edgeDetect()
   {
     leftEdge = x - 10;

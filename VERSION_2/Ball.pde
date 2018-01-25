@@ -105,12 +105,16 @@ class Ball
     {
       enemyLives = enemyLives - 1;
     }
-    
-    if(playerLives == - 1)
+
+    if (playerLives == - 1)
     {
       menus.playing = false;
-      menus.menu = false;
       menus.dead = true;
+    }
+    if (enemyLives == -1)
+    {
+      menus.playing = false;
+      menus.won = true;
     }
   }
 }
