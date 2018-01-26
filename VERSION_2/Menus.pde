@@ -24,6 +24,16 @@ class Menus
       paddle.caller();
       enemy.caller();
       ball.caller();
+      fill(255);
+      textSize(20);
+      text("Lives", 30, 20);
+      text(ball.playerLives, 30, 50);
+      text("Score", 100, 20);
+      text(ball.playerScore, 100, 50);
+      text("Lives", 470, 20);
+      text(ball.enemyLives, 470, 50);
+      text("Score", 400, 20);
+      text(ball.enemyScore, 400, 50);
     }
   }
 
