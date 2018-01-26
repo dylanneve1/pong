@@ -11,7 +11,7 @@ class Ball
   float topEdge;
   float bottomEdge;
 
-  float xSpeed = 3;
+  float xSpeed = 5;
   float ySpeed;
 
   float r = 10;
