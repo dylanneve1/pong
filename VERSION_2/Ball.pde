@@ -18,6 +18,8 @@ class Ball
 
   int playerLives = 5;
   int enemyLives = 5;
+  int playerScore = 0;
+  int enemyScore = 0;
 
   void caller()
   {
