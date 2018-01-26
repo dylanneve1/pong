@@ -21,19 +21,22 @@ class Menus
     if (playing == true)
     {
       background(#263238);
+      //background(0);
       paddle.caller();
       enemy.caller();
       ball.caller();
       fill(255);
       textSize(20);
-      text("Lives", 30, 20);
-      text(ball.playerLives, 30, 50);
-      text("Score", 100, 20);
-      text(ball.playerScore, 100, 50);
-      text("Lives", 470, 20);
-      text(ball.enemyLives, 470, 50);
-      text("Score", 400, 20);
-      text(ball.enemyScore, 400, 50);
+      //text("Lives", 50, 20);
+      //text(ball.playerLives, 50, 50);
+      text("Score", 50, 30);
+      text(ball.playerScore, 50, 60);
+      //text("Lives", 450, 20);
+      //text(ball.enemyLives, 450, 50);
+      text("Score", 450, 30);
+      text(ball.enemyScore, 450, 60);
+      //fill(255);
+      //dash.line(10, 500, 90, 90);
     }
   }
 

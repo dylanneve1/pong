@@ -16,8 +16,8 @@ class Ball
 
   float r = 10;
 
-  int playerLives = 5;
-  int enemyLives = 5;
+  //int playerLives = 5;
+  //int enemyLives = 5;
   int playerScore = 0;
   int enemyScore = 0;
 
@@ -99,21 +99,23 @@ class Ball
 
   void lifeDetect()
   {
-    if (y <= 0)
+    if (leftEdge <= 0)
     {
-      playerLives = playerLives - 1;
+      //playerLives += - 1;
+      enemyScore += 1;
     }
-    if (y >= 500)
+    if (rightEdge >= 500)
     {
-      enemyLives = enemyLives - 1;
+      //enemyLives += - 1;
+      playerScore += 1;
     }
 
-    if (playerLives == - 1)
+    if (enemyScore == 10)
     {
       menus.playing = false;
       menus.dead = true;
     }
-    if (enemyLives == -1)
+    if (playerScore == 10)
     {
       menus.playing = false;
       menus.won = true;
