@@ -12,6 +12,8 @@ class Menus
   {
     menu();
     play();
+    dead();
+    won();
   }
 
   void play()
