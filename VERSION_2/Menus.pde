@@ -27,16 +27,10 @@ class Menus
       ball.caller();
       fill(255);
       textSize(20);
-      //text("Lives", 50, 20);
-      //text(ball.playerLives, 50, 50);
       text("Score", 50, 30);
       text(ball.playerScore, 50, 60);
-      //text("Lives", 450, 20);
-      //text(ball.enemyLives, 450, 50);
       text("Score", 450, 30);
       text(ball.enemyScore, 450, 60);
-      //fill(255);
-      //dash.line(10, 500, 90, 90);
     }
   }
 

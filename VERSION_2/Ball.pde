@@ -54,14 +54,6 @@ class Ball
 
   void sidesCollision()
   {
-    if (leftEdge <= 0)
-    {
-      xSpeed *= -1;
-    }
-    if (rightEdge >= 500)
-    {
-      xSpeed *= -1;
-    }
     if (topEdge <= 0)
     {
       ySpeed *= -1;
@@ -101,13 +93,15 @@ class Ball
   {
     if (leftEdge <= 0)
     {
-      //playerLives += - 1;
       enemyScore += 1;
+      xSpeed *= -1;
+      x = 150;
     }
     if (rightEdge >= 500)
     {
-      //enemyLives += - 1;
       playerScore += 1;
+      xSpeed *= -1;
+      x = 350;
     }
 
     if (enemyScore == 10)
