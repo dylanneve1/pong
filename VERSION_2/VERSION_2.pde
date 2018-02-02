@@ -1,8 +1,5 @@
-// Copyright (C) 2017 Dylan Neve <dylanneve1@gmail.com>
+// Copyright (C) 2018 Dylan Neve <dylanneve1@gmail.com>
 
-import garciadelcastillo.dashedlines.*;
-
-DashedLines dash;
 Enemy enemy;
 Paddle paddle;
 Menus menus;
@@ -14,8 +11,6 @@ void setup()
   enemy = new Enemy();
   menus = new Menus();
   ball = new Ball();
-  dash = new DashedLines(this);
-  dash.pattern(10, 5);
   size(500, 500);
 }
 
