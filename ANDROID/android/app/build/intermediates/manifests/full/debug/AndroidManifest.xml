@@ -9,7 +9,6 @@
         android:targetSdkVersion="26" />
 
     <application
-        android:debuggable="true"
         android:icon="@drawable/icon"
         android:label="ANDROID" >
         <activity

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\libs\processing-core.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="c88da33bc2c08eb0a88c440187a764e25ef805ca">
+        <dex dex="C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\build\intermediates\pre-dexed\debug\processing-core_181d32822cceaa9277cb262d5fda3ae031671ff4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\libs\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_9d8c69a825e440351bca1b555c09cbd5f9e1f32e.jar" />
+    </item>
+
+</items>

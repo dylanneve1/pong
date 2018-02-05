@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\dylan\\Documents\\GitHub\\pong\\ANDROID\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\accept_deny_dialog.xml",
+        "source": "C:\\Users\\dylan\\.android\\build-cache\\307c538b49cf26f397049787d645fa1cfe4c0c00\\output\\res\\layout-v21\\accept_deny_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\dylan\\Documents\\GitHub\\pong\\ANDROID\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\dismiss_overlay.xml",
+        "source": "C:\\Users\\dylan\\.android\\build-cache\\307c538b49cf26f397049787d645fa1cfe4c0c00\\output\\res\\layout-v21\\dismiss_overlay.xml"
+    },
+    {
+        "merged": "C:\\Users\\dylan\\Documents\\GitHub\\pong\\ANDROID\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\dylan\\.android\\build-cache\\2aadc2f3f4d77233548dfdf1cb6096cbb64ca1d5\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\dylan\\Documents\\GitHub\\pong\\ANDROID\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\dylan\\.android\\build-cache\\2aadc2f3f4d77233548dfdf1cb6096cbb64ca1d5\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\dylan\\Documents\\GitHub\\pong\\ANDROID\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\dylan\\.android\\build-cache\\2aadc2f3f4d77233548dfdf1cb6096cbb64ca1d5\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\dylan\\Documents\\GitHub\\pong\\ANDROID\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\dylan\\.android\\build-cache\\2aadc2f3f4d77233548dfdf1cb6096cbb64ca1d5\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\dylan\\Documents\\GitHub\\pong\\ANDROID\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\overlay_confirmation.xml",
+        "source": "C:\\Users\\dylan\\.android\\build-cache\\307c538b49cf26f397049787d645fa1cfe4c0c00\\output\\res\\layout-v21\\overlay_confirmation.xml"
+    }
+]

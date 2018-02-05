@@ -1,26 +1,6 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:1-12:12
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:1-12:12
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:1-12:12
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:design:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\0b60ad7b960082768bdf1f046537e6af\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\3f0ac393e4977c0a24709a119df4c1ac\AndroidManifest.xml:17:1-27:12
-MERGED from [com.google.android.support:wearable:2.0.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\wearable-2.0.0.aar\209e06cccabeb0c2e9bfd0864d8c8cc3\AndroidManifest.xml:2:1-8:12
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\a0f9f33b9db86f20de9768905ea95339\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\15051ef2424e825c4494844f613751f5\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:transition:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\3115a65e44fb55cc428add30e5f18e10\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:percent:23.0.1] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\percent-23.0.1.aar\65406dec9aaabbc20824cd2691b780a2\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\2d0aeba021c9e6bac2621532bc825703\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\f5551503290f4f0ee73cd66845f2c666\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\f7946841ac78c50d4e0ef0944f218d98\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\6fd814c027b5903c3bac989062ea064f\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\cca57b1692f1bff87a81566f305f4faa\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\f60c2865895983d9e6914bee1dd7f51d\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\7f277685f8c9a419e84b0d89405d027c\AndroidManifest.xml:17:1-27:12
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:1-12:12
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:1-12:12
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:1-12:12
 	package
 		ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:120-149
 		INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml
@@ -29,48 +9,30 @@ INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\
 		ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:94-119
 		INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
 		ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:70-93
 		INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:3:5-73
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:3:5-73
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:3:5-73
-MERGED from [com.android.support:design:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\0b60ad7b960082768bdf1f046537e6af\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\0b60ad7b960082768bdf1f046537e6af\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\3f0ac393e4977c0a24709a119df4c1ac\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\3f0ac393e4977c0a24709a119df4c1ac\AndroidManifest.xml:21:5-23:78
-MERGED from [com.google.android.support:wearable:2.0.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\wearable-2.0.0.aar\209e06cccabeb0c2e9bfd0864d8c8cc3\AndroidManifest.xml:4:5-72
-MERGED from [com.google.android.support:wearable:2.0.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\wearable-2.0.0.aar\209e06cccabeb0c2e9bfd0864d8c8cc3\AndroidManifest.xml:4:5-72
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\a0f9f33b9db86f20de9768905ea95339\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\a0f9f33b9db86f20de9768905ea95339\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\15051ef2424e825c4494844f613751f5\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\15051ef2424e825c4494844f613751f5\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:transition:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\3115a65e44fb55cc428add30e5f18e10\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\3115a65e44fb55cc428add30e5f18e10\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:percent:23.0.1] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\percent-23.0.1.aar\65406dec9aaabbc20824cd2691b780a2\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:percent:23.0.1] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\percent-23.0.1.aar\65406dec9aaabbc20824cd2691b780a2\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\2d0aeba021c9e6bac2621532bc825703\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\2d0aeba021c9e6bac2621532bc825703\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\f5551503290f4f0ee73cd66845f2c666\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\f5551503290f4f0ee73cd66845f2c666\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\f7946841ac78c50d4e0ef0944f218d98\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\f7946841ac78c50d4e0ef0944f218d98\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\6fd814c027b5903c3bac989062ea064f\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\6fd814c027b5903c3bac989062ea064f\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\cca57b1692f1bff87a81566f305f4faa\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\cca57b1692f1bff87a81566f305f4faa\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\f60c2865895983d9e6914bee1dd7f51d\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\f60c2865895983d9e6914bee1dd7f51d\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\7f277685f8c9a419e84b0d89405d027c\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\7f277685f8c9a419e84b0d89405d027c\AndroidManifest.xml:21:5-23:58
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:3:5-73
-INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:3:5-73
+MERGED from [com.android.support:design:25.2.0] C:\Users\dylan\.android\build-cache\7e8ee2c492f88fbcfc39bbbea34dfa0e6de42193\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\dylan\.android\build-cache\2aadc2f3f4d77233548dfdf1cb6096cbb64ca1d5\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\dylan\.android\build-cache\26ffb3bfc329365bb43ea1cb016ee727057bcc01\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\dylan\.android\build-cache\7b74f1183a4bcfc3dbd49fba128dbdec1a1c7765\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:transition:25.2.0] C:\Users\dylan\.android\build-cache\50a3751a1992bab46ffd5096bb70146a326e97e9\output\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.support:wearable:2.0.0] C:\Users\dylan\.android\build-cache\307c538b49cf26f397049787d645fa1cfe4c0c00\output\AndroidManifest.xml:4:5-72
+MERGED from [com.android.support:percent:23.0.1] C:\Users\dylan\.android\build-cache\0cef44eec2ab302c864f73e05b8e33d727cc7d0d\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\dylan\.android\build-cache\503ff96e29ddf34cefbe85efbafef46da3ab884e\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\dylan\.android\build-cache\1ece8e6cce605bcbede0321d5b9d8f7fa3eaf096\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\dylan\.android\build-cache\f25dbdeb3161fec6edfefa2e40aefb64732e67be\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\dylan\.android\build-cache\3727e4070fa715d9ff30e1c8c51e5766963daed7\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\dylan\.android\build-cache\47b0675ad1527ee476b2c6407fd0834f97119e06\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\dylan\.android\build-cache\71bb193a0f549908160e7c1e345438dc294c5626\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\dylan\.android\build-cache\e98ec3c24afee0310e5cfa2bc7ff09781e67dc44\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\0b60ad7b960082768bdf1f046537e6af\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.2.0] C:\Users\dylan\.android\build-cache\7e8ee2c492f88fbcfc39bbbea34dfa0e6de42193\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:3:42-71
 		INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml
@@ -81,32 +43,19 @@ INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\
 		INJECTED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml
 application
 ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:4:5-11:19
-MERGED from [com.android.support:design:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\0b60ad7b960082768bdf1f046537e6af\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:design:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\0b60ad7b960082768bdf1f046537e6af\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\3f0ac393e4977c0a24709a119df4c1ac\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\3f0ac393e4977c0a24709a119df4c1ac\AndroidManifest.xml:25:5-20
-MERGED from [com.google.android.support:wearable:2.0.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\wearable-2.0.0.aar\209e06cccabeb0c2e9bfd0864d8c8cc3\AndroidManifest.xml:6:5-19
-MERGED from [com.google.android.support:wearable:2.0.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\wearable-2.0.0.aar\209e06cccabeb0c2e9bfd0864d8c8cc3\AndroidManifest.xml:6:5-19
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\a0f9f33b9db86f20de9768905ea95339\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\a0f9f33b9db86f20de9768905ea95339\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\15051ef2424e825c4494844f613751f5\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\15051ef2424e825c4494844f613751f5\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:transition:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\3115a65e44fb55cc428add30e5f18e10\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:transition:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\3115a65e44fb55cc428add30e5f18e10\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:percent:23.0.1] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\percent-23.0.1.aar\65406dec9aaabbc20824cd2691b780a2\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:percent:23.0.1] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\percent-23.0.1.aar\65406dec9aaabbc20824cd2691b780a2\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\2d0aeba021c9e6bac2621532bc825703\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\2d0aeba021c9e6bac2621532bc825703\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\f5551503290f4f0ee73cd66845f2c666\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\f5551503290f4f0ee73cd66845f2c666\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\f7946841ac78c50d4e0ef0944f218d98\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\f7946841ac78c50d4e0ef0944f218d98\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\6fd814c027b5903c3bac989062ea064f\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\6fd814c027b5903c3bac989062ea064f\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\f60c2865895983d9e6914bee1dd7f51d\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\f60c2865895983d9e6914bee1dd7f51d\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\7f277685f8c9a419e84b0d89405d027c\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\dylan\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\7f277685f8c9a419e84b0d89405d027c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.2.0] C:\Users\dylan\.android\build-cache\7e8ee2c492f88fbcfc39bbbea34dfa0e6de42193\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\dylan\.android\build-cache\2aadc2f3f4d77233548dfdf1cb6096cbb64ca1d5\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\dylan\.android\build-cache\26ffb3bfc329365bb43ea1cb016ee727057bcc01\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\dylan\.android\build-cache\7b74f1183a4bcfc3dbd49fba128dbdec1a1c7765\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\dylan\.android\build-cache\50a3751a1992bab46ffd5096bb70146a326e97e9\output\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.support:wearable:2.0.0] C:\Users\dylan\.android\build-cache\307c538b49cf26f397049787d645fa1cfe4c0c00\output\AndroidManifest.xml:6:5-19
+MERGED from [com.android.support:percent:23.0.1] C:\Users\dylan\.android\build-cache\0cef44eec2ab302c864f73e05b8e33d727cc7d0d\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\dylan\.android\build-cache\503ff96e29ddf34cefbe85efbafef46da3ab884e\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\dylan\.android\build-cache\1ece8e6cce605bcbede0321d5b9d8f7fa3eaf096\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\dylan\.android\build-cache\f25dbdeb3161fec6edfefa2e40aefb64732e67be\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\dylan\.android\build-cache\3727e4070fa715d9ff30e1c8c51e5766963daed7\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\dylan\.android\build-cache\71bb193a0f549908160e7c1e345438dc294c5626\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\dylan\.android\build-cache\e98ec3c24afee0310e5cfa2bc7ff09781e67dc44\output\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from C:\Users\dylan\Documents\GitHub\pong\ANDROID\android\app\src\main\AndroidManifest.xml:4:48-71
 	android:icon

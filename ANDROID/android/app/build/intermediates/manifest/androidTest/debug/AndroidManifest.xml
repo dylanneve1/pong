@@ -13,7 +13,7 @@
         android:label="Tests for com.dylanneve1.pong"
         android:targetPackage="com.dylanneve1.pong" />
 
-    <application android:debuggable="true" >
+    <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
