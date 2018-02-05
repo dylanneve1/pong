@@ -1,4 +1,5 @@
 // Copyright (C) 2018 Dylan Neve <dylanneve1@gmail.com>
+// Android version
 
 Enemy enemy;
 Paddle paddle;
@@ -7,11 +8,14 @@ Ball ball;
 
 void setup()
 {
+  // Force landscape on Android
+  orientation(LANDSCAPE);
   paddle = new Paddle();
   enemy = new Enemy();
   menus = new Menus();
   ball = new Ball();
-  size(500, 500);
+  // Base size on display
+  size(displayWidth, displayHeight);
 }
 
 void draw()
