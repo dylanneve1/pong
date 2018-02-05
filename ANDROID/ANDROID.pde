@@ -9,6 +9,8 @@ Ball ball;
 void setup()
 {
   // Force landscape on Android
+  //fullScreen();
+  frameRate(60);
   orientation(LANDSCAPE);
   paddle = new Paddle();
   enemy = new Enemy();

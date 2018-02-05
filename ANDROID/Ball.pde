@@ -65,7 +65,7 @@ class Ball
 
   void leftPaddleCollision()
   {
-    if (leftEdge <= paddle.rightEdge && y <= paddle.bottomEdge && y >= paddle.topEdge && leftEdge >= paddle.rightEdge -2)
+    if (leftEdge <= paddle.rightEdge && y <= paddle.bottomEdge && y >= paddle.topEdge && leftEdge <= paddle.rightEdge -2)
     {
       float diff = y - (paddle.y - paddle.h/2);
       float rad = radians(45);
@@ -78,7 +78,7 @@ class Ball
 
   void rightPaddleCollision()
   {
-    if (rightEdge >= enemy.leftEdge && y <= enemy.bottomEdge && y >= enemy.topEdge && rightEdge <= enemy.leftEdge + 2)
+    if (rightEdge >= enemy.leftEdge && y <= enemy.bottomEdge && y >= enemy.topEdge && rightEdge >= enemy.leftEdge + 2)
     {
       float diff = y - (enemy.y - enemy.h/2);
       float angle = map(diff, 0, enemy.h, radians(225), radians(135));
