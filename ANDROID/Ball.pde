@@ -95,7 +95,7 @@ class Ball
       delay(1000);
       enemyScore += 1;
       xSpeed *= -1;
-      x = 150;
+      x = displayWidth * 0.3;
     }
     if (rightEdge >= displayWidth)
     {
