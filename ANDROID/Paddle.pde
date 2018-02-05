@@ -4,11 +4,11 @@
 class Paddle
 {
 
-  float x = 30;
-  float y = 250;
+  float x = displayWidth * 0.06;
+  float y = displayHeight/2;
 
-  float w = 20;
-  float h = 60;
+  float w = displayWidth * 0.04;
+  float h = displayWidth * 0.12;
 
   float leftEdge;
   float rightEdge;
@@ -33,34 +33,14 @@ class Paddle
 
   void move()
   {
-    if (y < 0)
-    {
-      y = y + 6;
-    }
-
-    if ( y > 500)
-    {
-      y = y - 6;
-    }
-
-    if (keyPressed == true)
-    {
-      if (key == 'w')
-      {
-        y = y - 6;
-      }
-      if (key == 's')
-      {
-        y = y + 6;
-      }
-    }
+    y = mouseY;
   }
 
   void edgeDetect()
   {
-    leftEdge = x - 10;
-    rightEdge = x + 10;
-    topEdge = y - 30;
-    bottomEdge = y + 30;
+    leftEdge = x - w/2;
+    rightEdge = x + w/2;
+    topEdge = y - h/2;
+    bottomEdge = y + h/2;
   }
 }

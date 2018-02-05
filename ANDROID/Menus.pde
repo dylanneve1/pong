@@ -4,8 +4,8 @@
 class Menus
 {
 
-  boolean playing = false;
-  boolean menu = true;
+  boolean playing = true;
+  boolean menu = false;
   boolean dead = false;
   boolean won = false;
 
@@ -26,12 +26,13 @@ class Menus
       paddle.caller();
       enemy.caller();
       ball.caller();
+      textAlign(CENTER);
       fill(255);
-      textSize(20);
-      text("Score", 50, 30);
-      text(ball.playerScore, 50, 60);
-      text("Score", 450, 30);
-      text(ball.enemyScore, 450, 60);
+      textSize(displayWidth * 0.04);
+      text("Score", displayWidth * 0.1, displayWidth * 0.06);
+      text(ball.playerScore, displayWidth * 0.1, displayWidth * 0.12);
+      text("Score", displayWidth * 0.9, displayWidth * 0.06);
+      text(ball.enemyScore, displayWidth * 0.9, displayWidth * 0.12);
     }
   }
 

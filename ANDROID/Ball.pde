@@ -70,8 +70,8 @@ class Ball
       float diff = y - (paddle.y - paddle.h/2);
       float rad = radians(45);
       float angle = map(diff, 0, paddle.h, -rad, rad);
-      xSpeed = 5 * cos(angle);
-      ySpeed = 5 * sin(angle);
+      xSpeed = (displayWidth * 20/2560) * cos(angle);
+      ySpeed = (displayWidth * 20/2560) * sin(angle);
       x = paddle.x + paddle.w/2 + r;
     }
   }
@@ -82,8 +82,8 @@ class Ball
     {
       float diff = y - (enemy.y - enemy.h/2);
       float angle = map(diff, 0, enemy.h, radians(225), radians(135));
-      xSpeed = 5 * cos(angle);
-      ySpeed = 5 * sin(angle);
+      xSpeed = (displayWidth * 20/2560) * cos(angle);
+      ySpeed = (displayWidth * 20/2560) * sin(angle);
       x = enemy.x - enemy.w/2 - r;
     }
   }

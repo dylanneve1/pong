@@ -4,7 +4,7 @@
 class Enemy
 {
 
-  float x = 470;
+  float x = displayWidth * 0.94;
   float y;
 
   float leftEdge;
@@ -12,8 +12,8 @@ class Enemy
   float topEdge;
   float bottomEdge;
 
-  float w = 20;
-  float h = 60;
+  float w = displayWidth * 0.04;
+  float h = displayWidth * 0.12;
 
   void caller()
   {
@@ -34,9 +34,9 @@ class Enemy
 
   void edgeDetect()
   {
-    leftEdge = x - 10;
-    rightEdge = x + 10;
-    topEdge = y - 30;
-    bottomEdge = y + 30;
+    leftEdge = x - w/2;
+    rightEdge = x + w/2;
+    topEdge = y - h/2;
+    bottomEdge = y + h/2;
   }
 }
