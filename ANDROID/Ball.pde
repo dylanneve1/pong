@@ -4,21 +4,19 @@
 class Ball
 {
 
-  float x = 250;
-  float y = 250;
+  float x = displayWidth/2;
+  float y = displayHeight/2;
 
   float leftEdge;
   float rightEdge;
   float topEdge;
   float bottomEdge;
 
-  float xSpeed = 5;
+  float xSpeed = displayWidth * 0.01;
   float ySpeed;
 
-  float r = 10;
+  float r = displayWidth * 0.02;
 
-  //int playerLives = 5;
-  //int enemyLives = 5;
   int playerScore = 0;
   int enemyScore = 0;
 
@@ -47,10 +45,10 @@ class Ball
 
   void edgeDetect()
   {
-    rightEdge = x + 10;
-    leftEdge = x - 10;
-    topEdge = y - 10;
-    bottomEdge = y + 10;
+    rightEdge = x + r;
+    leftEdge = x - r;
+    topEdge = y - r;
+    bottomEdge = y + r;
   }
 
   void sidesCollision()
@@ -59,7 +57,7 @@ class Ball
     {
       ySpeed *= -1;
     }
-    if (bottomEdge >= 500)
+    if (bottomEdge >= displayHeight)
     {
       ySpeed *= -1;
     }
@@ -99,12 +97,12 @@ class Ball
       xSpeed *= -1;
       x = 150;
     }
-    if (rightEdge >= 500)
+    if (rightEdge >= displayWidth)
     {
       delay(1000);
       playerScore += 1;
       xSpeed *= -1;
-      x = 350;
+      x = displayWidth * 0.7;
     }
 
     if (enemyScore == 10)
