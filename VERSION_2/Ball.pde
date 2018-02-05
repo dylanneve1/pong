@@ -93,12 +93,14 @@ class Ball
   {
     if (leftEdge <= 0)
     {
+      delay(1000);
       enemyScore += 1;
       xSpeed *= -1;
       x = 150;
     }
     if (rightEdge >= 500)
     {
+      delay(1000);
       playerScore += 1;
       xSpeed *= -1;
       x = 350;
