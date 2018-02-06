@@ -4,8 +4,8 @@
 class Menus
 {
 
-  boolean playing = true;
-  boolean menu = false;
+  boolean playing = false;
+  boolean menu = true;
   boolean dead = false;
   boolean won = false;
 
@@ -56,20 +56,20 @@ class Menus
   {
     if (menu == true)
     {
-
       background(#263238);
-      fill(255);
-      textSize(40);
+      textSize(100);
       textAlign(CENTER);
-      text("Press r to begin", 250, 250);
+      rectMode(CENTER);
+      //fill(0);
+      //rect(displayWidth/2, displayHeight/2, displayWidth * 0.3, displayHeight * 0.3);
+      fill(255);
+      text("Tap to play", displayWidth/2, displayHeight/2);
 
-      if (keyPressed == true)
+      if (mousePressed == true)
       {
-        if (key == 'r')
-        {
-          playing = true;
-          menu = false;
-        }
+        delay(500);
+        menu = false;
+        playing = true;
       }
     }
   }
