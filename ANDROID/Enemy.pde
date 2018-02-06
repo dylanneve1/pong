@@ -23,8 +23,13 @@ class Enemy
 
   void show()
   {
-    y = ball.y;
-
+    if (ball.chance <= 20)
+    {
+      y = ball.y - displayHeight * 0.3;
+    } else if(ball.chance >= 21)
+    {
+      y = ball.y;
+    }
     noStroke();
     rectMode(CENTER);
 

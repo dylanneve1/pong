@@ -19,6 +19,8 @@ class Ball
 
   int playerScore = 0;
   int enemyScore = 0;
+  
+  float chance = 50;
 
   void caller()
   {
@@ -73,6 +75,7 @@ class Ball
       xSpeed = (displayWidth * 20/2560) * cos(angle);
       ySpeed = (displayWidth * 20/2560) * sin(angle);
       x = paddle.x + paddle.w/2 + r;
+      chance = random(0,100);
     }
   }
 
