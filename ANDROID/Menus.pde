@@ -57,7 +57,7 @@ class Menus
     if (menu == true)
     {
       background(#263238);
-      textSize(100);
+      textSize(displayWidth * 0.04);
       textAlign(CENTER);
       rectMode(CENTER);
       //fill(0);
