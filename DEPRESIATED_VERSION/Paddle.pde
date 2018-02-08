@@ -13,11 +13,11 @@ class Paddle
 
   void collision() 
   {
-    if (ball.x <= playerOnexPos + 10 && ball.y >= playerOneyPos - 30 && ball.y <= playerOneyPos + 30 && ball.x >= playerOnexPos - 10)
+    if (ball.x <= playerOnexPos + 20 && ball.y >= playerOneyPos && ball.y <= playerOneyPos + 60 && ball.x >= playerOnexPos + 15) 
     {
       ball.xSpeed = ball.xSpeed * -1;
     }
-    if (ball.x >= rectTwoxPos + 10 && ball.y >= enemyOneyPos -30 && ball.y <= enemyOneyPos + 30 && ball.x >= rectTwoxPos - 10) 
+    if (ball.x >= rectTwoxPos && ball.y >= enemyOneyPos && ball.y <= enemyOneyPos + 60 && ball.x <= rectTwoxPos + 5) 
     {
       ball.xSpeed = ball.xSpeed * -1;
     }

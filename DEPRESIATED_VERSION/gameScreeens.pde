@@ -4,8 +4,6 @@ class gameScreens
 {
   int deathScreens = 1;
   int menu = 1;
-  boolean gameMainSing = false;
-  
   void deathScreen() 
   {
     if (deathScreens == 2) 
@@ -30,59 +28,45 @@ class gameScreens
   {
     if (menu == 1) 
     {
-      textAlign(CENTER);
       ball.lifes = 5;
       background(0);
       textSize(40);
-      fill(255);
-      text("Press R to begin", 250, 250);
-      fill(255);
-      rectMode(CENTER);
-      rect(250, 110, 200, 120);
-      fill(0);
-      text("Pong", 250, 100);
-      textSize(20);
-      text("by dylanneve1", 250, 150);
+      text("Press R to begin", 90, 250);
     }
   }
 
   void gameMainSing() 
   {
-    if (gameMainSing == true)
-    {
-      background(0);
-      fill(255);
-      textSize(20);
-      text("Score", 250, 20);
-      text(score, 250, 45);
-      text("High score", 344, 20);
-      text(highScore, 344, 45);
-      text("Lifes", 30, 20);
-      text(ball.lifes, 30, 45);
-      paddle.offSet();
-      paddle.collision();
-      paddle.randomness();
-      ball.life();
-      ball.move();
-      ball.bounce();
-      ball.gravity();
-      ball.show();
-      rectMode(CENTER);
-      rect(paddle.playerOnexPos, paddle.playerOneyPos, 20, 60);
-      rect(paddle.rectTwoxPos, paddle.enemyOneyPos, 20, 60);
-      if (keyPressed == true) {
-        if (key == 'w') 
-        {
-          paddle.playerOneyPos = paddle.playerOneyPos - 4;
-        }
-        if (key == 's') 
-        {
-          paddle.playerOneyPos = paddle.playerOneyPos + 4;
-        }
+    background(0);
+    textSize(20);
+    text("Score", 230, 20);
+    text(score, 250, 45);
+    text("High score", 300, 20);
+    text(highScore, 344, 45);
+    text("Lifes", 15, 20);
+    text(ball.lifes, 30, 45);
+    paddle.offSet();
+    paddle.collision();
+    paddle.randomness();
+    ball.life();
+    ball.move();
+    ball.bounce();
+    ball.gravity();
+    ball.show();
+    rect(paddle.playerOnexPos, paddle.playerOneyPos, 20, 60);
+    rect(paddle.rectTwoxPos, paddle.enemyOneyPos, 20, 60);
+    if (keyPressed == true) {
+      if (key == 'w') 
+      {
+        paddle.playerOneyPos = paddle.playerOneyPos - 4;
+      }
+      if (key == 's') 
+      {
+        paddle.playerOneyPos = paddle.playerOneyPos + 4;
       }
     }
   }
-
+  
   void gameMainMulti() 
   {
     background(0);
@@ -116,4 +100,5 @@ class gameScreens
       }
     }
   }
+  
 }

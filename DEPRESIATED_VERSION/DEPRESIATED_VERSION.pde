@@ -6,7 +6,6 @@ gameScreens screens;
 
 int score = 0;
 int highScore = 0;
-//int highScore = int(loadStrings("testsaveloadstring.txt"));
 
 void setup() 
 {
@@ -19,15 +18,18 @@ void setup()
 
 void draw() 
 {
-  paddle.enemyOneyPos = ball.y;
+  paddle.enemyOneyPos = ball.y - 30;
   screens.menu();
   screens.deathScreen();
   if (keyPressed == true) 
   { 
     if (key == 'r') 
     {
-      screens.gameMainSing = true;
+      screens.menu = 2;
     }
   }
-  screens.gameMainSing();
+  if (screens.menu == 2) 
+  {
+    screens.gameMainSing();
+  }
 }
