@@ -41,6 +41,9 @@ class Menus
     if (dead == true)
     {
       background(#BF360C);
+      delay(5000);
+      dead = false;
+      menu = true;
     }
   }
 
@@ -49,6 +52,9 @@ class Menus
     if (won == true)
     {
       background(#01579B);
+      delay(5000);
+      won = false;
+      menu = true;
     }
   }
 
