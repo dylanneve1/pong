@@ -33,7 +33,17 @@ class Paddle
 
   void move()
   {
-    y = mouseY;
+    if(mousePressed)
+    {
+      if(mouseY > displayHeight/2)
+      {
+        y = y + (displayHeight * 6/1080);
+      }
+      else if(mouseY < displayHeight/2)
+      {
+        y = y - (displayHeight * 6/1080);
+      }
+    }
   }
 
   void edgeDetect()
