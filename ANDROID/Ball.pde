@@ -19,8 +19,6 @@ class Ball
 
   int playerScore = 0;
   int enemyScore = 0;
-  
-  float chance = 50;
 
   void caller()
   {
@@ -47,6 +45,7 @@ class Ball
 
   void edgeDetect()
   {
+    // This makes it easier for collision as instead of using (ball.x - r) you can use ball.leftEdge
     rightEdge = x + r;
     leftEdge = x - r;
     topEdge = y - r;
@@ -69,13 +68,14 @@ class Ball
   {
     if (leftEdge <= paddle.rightEdge && y <= paddle.bottomEdge && y >= paddle.topEdge && leftEdge <= paddle.rightEdge -2)
     {
+      // Adds angle the ball goes off at depending on where it hits the paddle.
       float diff = y - (paddle.y - paddle.h/2);
       float rad = radians(45);
       float angle = map(diff, 0, paddle.h, -rad, rad);
       xSpeed = (displayWidth * 20/2560) * cos(angle);
       ySpeed = (displayWidth * 20/2560) * sin(angle);
       x = paddle.x + paddle.w/2 + r;
-      chance = random(0,100);
+      enemy.chance = random(0,100);
     }
   }
 
@@ -83,6 +83,7 @@ class Ball
   {
     if (rightEdge >= enemy.leftEdge && y <= enemy.bottomEdge && y >= enemy.topEdge && rightEdge >= enemy.leftEdge + 2)
     {
+      // Adds angle the ball goes off at depending on where it hits the paddle.
       float diff = y - (enemy.y - enemy.h/2);
       float angle = map(diff, 0, enemy.h, radians(225), radians(135));
       xSpeed = (displayWidth * 20/2560) * cos(angle);

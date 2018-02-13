@@ -9,7 +9,6 @@ Ball ball;
 void setup()
 {
   // Force landscape on Android
-  //fullScreen();
   frameRate(60);
   orientation(LANDSCAPE);
   paddle = new Paddle();
@@ -22,5 +21,6 @@ void setup()
 
 void draw()
 {
+  // Calls all menus.
   menus.caller();
 }

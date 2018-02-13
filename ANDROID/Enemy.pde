@@ -15,6 +15,8 @@ class Enemy
   float w = displayWidth * 0.04;
   float h = displayWidth * 0.12;
 
+  float chance = 50;
+
   void caller()
   {
     show();
@@ -23,10 +25,10 @@ class Enemy
 
   void show()
   {
-    if (ball.chance <= 20)
+    if (chance <= 20)
     {
       y = ball.y - displayHeight * 0.3;
-    } else if(ball.chance >= 21)
+    } else if (chance >= 21)
     {
       y = ball.y;
     }
