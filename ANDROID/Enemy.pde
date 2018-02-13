@@ -27,7 +27,10 @@ class Enemy
   {
     if (chance <= 20)
     {
-      y = ball.y - displayHeight * 0.3;
+      for (int i = 0; i < 5000; i++)
+      {
+        y = ball.y - (i/1000 * 50);
+      }
     } else if (chance >= 21)
     {
       y = ball.y;
