@@ -2,9 +2,13 @@
 
 class Enemy
 {
-
+  boolean moveDiff = true;
+  
+  String whatIsChance = "Hit";
+  
   float x = 470;
   float y;
+  float diff = 0;
 
   float leftEdge;
   float rightEdge;
@@ -16,17 +20,16 @@ class Enemy
 
   void caller()
   {
+    y = ball.y + diff;
     show();
     edgeDetect();
+    diffCalculator();
   }
 
   void show()
   {
-    y = ball.y;
-
     noStroke();
     rectMode(CENTER);
-
     fill(#CFD8DC);
     rect(x, y, w, h);
   }
@@ -37,5 +40,29 @@ class Enemy
     rightEdge = x + 10;
     topEdge = y - 30;
     bottomEdge = y + 30;
+  }
+  
+  void diffCalculator() {
+    if(ball.chance > 6 && moveDiff == true) {
+      diff += 1;
+      whatIsChance = "Miss";
+      if(diff >= 50) {
+        moveDiff = false;
+      }
+    }
+    //if(ball.chance > 5 && ball.chance < 8 && moveDiff == true) {
+    //  diff += 1;
+    //  if(diff <= 200) {
+    //    moveDiff = false;
+    //  }
+    //}
+    if(ball.chance < 6 && moveDiff == true) {
+      diff -= 2;
+      whatIsChance = "Hit";
+      if(diff <= 0) {
+        moveDiff = false;
+        diff = 0;
+      }
+    }
   }
 }

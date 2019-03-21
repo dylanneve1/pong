@@ -3,6 +3,8 @@
 class Ball
 {
 
+  float chance = 0;
+  
   float x = 250;
   float y = 250;
 
@@ -36,6 +38,7 @@ class Ball
   {
     fill(#ECEFF1);
     ellipse(x, y, r*2, r*2);
+    text(chance, 250, 40);
   }
 
   void move()
@@ -74,6 +77,8 @@ class Ball
       xSpeed = 5 * cos(angle);
       ySpeed = 5 * sin(angle);
       x = paddle.x + paddle.w/2 + r;
+      chance = random(0,10);
+      enemy.moveDiff = true;
     }
   }
 
@@ -93,25 +98,27 @@ class Ball
   {
     if (leftEdge <= 0)
     {
-      delay(1000);
+      delay(500);
       enemyScore += 1;
       xSpeed *= -1;
       x = 150;
+      enemy.diff = 0;
     }
     if (rightEdge >= 500)
     {
-      delay(1000);
+      delay(500);
       playerScore += 1;
       xSpeed *= -1;
       x = 350;
+      enemy.diff = 0;
     }
 
-    if (enemyScore == 10)
+    if (enemyScore == 5)
     {
       menus.playing = false;
       menus.dead = true;
     }
-    if (playerScore == 10)
+    if (playerScore == 5)
     {
       menus.playing = false;
       menus.won = true;

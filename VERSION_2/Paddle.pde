@@ -2,7 +2,7 @@
 
 class Paddle
 {
-
+  
   float x = 30;
   float y = 250;
 

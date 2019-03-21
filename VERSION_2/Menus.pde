@@ -31,6 +31,7 @@ class Menus
       text(ball.playerScore, 50, 60);
       text("Score", 450, 30);
       text(ball.enemyScore, 450, 60);
+      text(enemy.whatIsChance, 250, 100);
     }
   }
 
@@ -38,7 +39,11 @@ class Menus
   {
     if (dead == true)
     {
+      textAlign(CENTER);
+      textSize(50);
       background(#BF360C);
+      fill(255);
+      text("You lost", 250, 250);
     }
   }
 
@@ -46,7 +51,10 @@ class Menus
   {
     if (won == true)
     {
+      textAlign(CENTER);
       background(#01579B);
+      textSize(50);
+      text("You won", 250, 250);
     }
   }
 
@@ -59,15 +67,19 @@ class Menus
       fill(255);
       textSize(40);
       textAlign(CENTER);
-      text("Press r to begin", 250, 250);
+      text("PONG", 250, 200);
+      textSize(20);
+      text("Press Up Key to Begin", 250, 300);
 
       if (keyPressed == true)
       {
-        if (key == 'r')
-        {
-          playing = true;
-          menu = false;
-        }
+        if (key == CODED)
+          if (keyCode == UP) {
+            {
+              playing = true;
+              menu = false;
+            }
+          }
       }
     }
   }
