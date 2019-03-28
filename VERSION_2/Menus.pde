@@ -31,7 +31,7 @@ class Menus
       text(ball.playerScore, 50, 60);
       text("Score", 450, 30);
       text(ball.enemyScore, 450, 60);
-      text(enemy.whatIsChance, 250, 100);
+      //text(enemy.whatIsChance, 250, 100);
     }
   }
 
