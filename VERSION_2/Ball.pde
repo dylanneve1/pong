@@ -38,7 +38,6 @@ class Ball
   {
     fill(#ECEFF1);
     ellipse(x, y, r*2, r*2);
-    text(chance, 250, 40);
   }
 
   void move()
