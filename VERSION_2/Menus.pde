@@ -33,6 +33,7 @@ class Menus
       text(ball.enemyScore, 450, 60);
       //text(enemy.whatIsChance, 250, 100);
       //text(chance, 250, 40);
+      text(enemy.diff, 250, 100);
     }
   }
 

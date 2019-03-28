@@ -43,25 +43,24 @@ class Enemy
   }
   
   void diffCalculator() {
-    if(ball.chance > 6 && moveDiff == true) {
+    if(ball.chance > 8 && moveDiff == true) {
       diff += 1;
       whatIsChance = "Miss";
       if(diff >= 50) {
         moveDiff = false;
       }
     }
-    //if(ball.chance > 5 && ball.chance < 8 && moveDiff == true) {
-    //  diff += 1;
-    //  if(diff <= 200) {
-    //    moveDiff = false;
-    //  }
-    //}
-    if(ball.chance < 6 && moveDiff == true) {
+    if(ball.chance < 8 && moveDiff == true) {
       diff -= 2;
       whatIsChance = "Hit";
       if(diff <= 0) {
         moveDiff = false;
-        diff = 0;
+        if(ball.chance < 4 && ball.chance > 0) {
+          diff = random(0, 20);
+        }
+        if(ball.chance < 8 && ball.chance > 4) {
+          diff = random(0, -20);
+        }
       }
     }
   }
