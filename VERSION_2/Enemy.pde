@@ -54,13 +54,13 @@ class Enemy
       diff -= 2;
       whatIsChance = "Hit";
       if(diff <= 0) {
-        moveDiff = false;
         if(ball.chance < 4 && ball.chance > 0) {
           diff = random(0, 20);
         }
         if(ball.chance < 8 && ball.chance > 4) {
           diff = random(0, -20);
         }
+        moveDiff = false;
       }
     }
   }
