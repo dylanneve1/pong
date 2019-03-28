@@ -32,8 +32,8 @@ class Menus
       text("Score", 450, 30);
       text(ball.enemyScore, 450, 60);
       //text(enemy.whatIsChance, 250, 100);
-      //text(chance, 250, 40);
-      text(enemy.diff, 250, 100);
+      //text(ball.chance, 250, 40);
+      //text(enemy.diff, 250, 160);
     }
   }
 
@@ -72,6 +72,7 @@ class Menus
       text("PONG", 250, 200);
       textSize(20);
       text("Press Up Key to Begin", 250, 300);
+      text("First to 5 Wins", 250, 250);
 
       if (keyPressed == true)
       {
